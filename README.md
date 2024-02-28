@@ -1,2 +1,9 @@
-# angularpro
-made this project with love from angular
+# Follow through the reame
+
+## Usage
+
+### Install dependencies
+
+```
+npm install
+```
