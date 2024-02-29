@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +15,11 @@ import { HeaderComponent } from './component/header/header.component';
 import { TaskItemComponent } from './component/task-item/task-item.component';
 import { TasksComponent } from './component/tasks/tasks.component';
 
+const appRoutes: Routes = [
+  { path: '', component: TasksComponent },
+  { path: 'about', component: AboutComponent },
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +29,16 @@ import { TasksComponent } from './component/tasks/tasks.component';
     FooterComponent,
     HeaderComponent,
     TaskItemComponent,
-    TasksComponent
+    TasksComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+  
+    FontAwesomeModule,
+
+
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
