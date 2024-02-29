@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { AddTaskComponent } from './add-task/add-task.component';
-import { ButtonComponent } from './button/button.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { TaskItemComponent } from './task-item/task-item.component';
-import { TasksComponent } from './tasks/tasks.component';
+import { AboutComponent } from './component/about/about.component';
+import { AddTaskComponent } from './component/add-task/add-task.component';
+import { ButtonComponent } from './component/button/button.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { HeaderComponent } from './component/header/header.component';
+import { TaskItemComponent } from './component/task-item/task-item.component';
+import { TasksComponent } from './component/tasks/tasks.component';
 
 @NgModule({
   declarations: [
